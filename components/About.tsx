@@ -45,19 +45,19 @@ const About = (props: Props) => {
           background
         </h4>
         <p className="text-sm">
-          I'm Ethan Burkett. I started my coding journey around the age of 12
-          and absolutely fell in love with designing websites, I first started
-          coding HTML and CSS just messing about with styling and making dumb
-          websites, I then fell in love with the JavaScript language. After this
-          I would go on to make some dumb clicker games and just learn scripting
-          more and more as I went on. A few years later I learned about template
-          languages like EJS, and started learning more about NodeJS and
-          starting Express servers. I really enjoyed being able to pass in
-          scripts into my HTML and soon learned what React was, I thought it was
-          dumb, EJS was the best. Then learned it 6 months later, absolutely
-          adored it. I now have been coding for 6 years and creating React
-          applications for 3. I aspire to work for a company that I can grow
-          with and be apart of a team that I can learn from.
+          I&lsquo;m Ethan Burkett. I started my coding journey around the age of
+          12 and absolutely fell in love with designing websites, I first
+          started coding HTML and CSS just messing about with styling and making
+          dumb websites, I then fell in love with the JavaScript language. After
+          this I would go on to make some dumb clicker games and just learn
+          scripting more and more as I went on. A few years later I learned
+          about template languages like EJS, and started learning more about
+          NodeJS and starting Express servers. I really enjoyed being able to
+          pass in scripts into my HTML and soon learned what React was, I
+          thought it was dumb, EJS was the best. Then learned it 6 months later,
+          absolutely adored it. I now have been coding for 6 years and creating
+          React applications for 3. I aspire to work for a company that I can
+          grow with and be apart of a team that I can learn from.
         </p>
       </div>
     </motion.div>

@@ -40,7 +40,9 @@ const ExperienceCard = (props: Props & ScriptProps) => {
         <p className="font-bold text-2xl mt-1">{props.subtitle}</p>
         <div className="flex space-x-2 my-2">
           {props.techStacks.map((techStack) => (
-            <span className="w-10 h-10 rounded-full">{techStack}</span>
+            <span key={techStack.key} className="w-10 h-10 rounded-full">
+              {techStack}
+            </span>
           ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
@@ -48,7 +50,7 @@ const ExperienceCard = (props: Props & ScriptProps) => {
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           {props.summaryPoints.map((summaryPoint) => (
-            <li>{summaryPoint}</li>
+            <li key={props.title}>{summaryPoint}</li>
           ))}
         </ul>
       </div>

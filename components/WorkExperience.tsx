@@ -39,13 +39,13 @@ const WorkExperience = () => {
           startedWork={"May 2021"}
           endedWork={"June 2022"}
           techStacks={[
-            <FaReact size={40} />,
-            <SiFirebase size={40} />,
-            <FaDatabase size={40} />,
-            <SiNextdotjs size={40} />,
-            <SiPython size={40} />,
-            <SiExpress size={40} />,
-            <SiLinux size={40} />,
+            <FaReact key="react" size={40} />,
+            <SiFirebase key="firebase" size={40} />,
+            <FaDatabase key="db" size={40} />,
+            <SiNextdotjs key="next" size={40} />,
+            <SiPython key="python" size={40} />,
+            <SiExpress key="express" size={40} />,
+            <SiLinux key="linux" size={40} />,
           ]}
           summaryPoints={[
             "Managed and created backend applications",
@@ -63,10 +63,10 @@ const WorkExperience = () => {
           startedWork={"January 2021"}
           endedWork={"Present"}
           techStacks={[
-            <FaReact size={40} />,
-            <FaDatabase size={40} />,
-            <SiNextdotjs size={40} />,
-            <SiExpress size={40} />,
+            <FaReact key="react" size={40} />,
+            <FaDatabase key="db" size={40} />,
+            <SiNextdotjs key="next" size={40} />,
+            <SiExpress key="express" size={40} />,
           ]}
           summaryPoints={[
             "Create UX/UI designs for clients",
