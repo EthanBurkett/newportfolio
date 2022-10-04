@@ -14,7 +14,7 @@ type Props = {
 
 const ExperienceCard = (props: Props & ScriptProps) => {
   return (
-    <article className="bg-[#292929] p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center md:hover:opacity-100 md:opacity-40 transition-opacity cursor-pointer duration-200">
+    <article className="bg-[#292929] p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center opacity-100 md:hover:opacity-100 md:opacity-40 transition-opacity cursor-pointer duration-200">
       <motion.img
         initial={{
           y: -100,
@@ -35,7 +35,7 @@ const ExperienceCard = (props: Props & ScriptProps) => {
         className="h-32 w-32 rounded-full xl:h-[200px] xl:w-[200px] object-cover object-center"
       />
 
-      <div className="md:px-10 scale-75 md:scale-0">
+      <div className="md:px-10 scale-75 md:scale-100">
         <h4 className="text-3xl md:text-4xl font-light">{props.title}</h4>
         <p className="font-bold text-2xl mt-1">{props.subtitle}</p>
         <div className="flex space-x-2 my-2">

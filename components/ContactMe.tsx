@@ -15,7 +15,7 @@ const ContactMe = (props: Props) => {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl hidden md:inline-flex">
         Contact
       </h3>
 
@@ -46,7 +46,7 @@ const ContactMe = (props: Props) => {
           onSubmit={(e) => handleSubmit(e)}
           className="flex flex-col space-y-2 w-fit mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0">
             <input
               placeholder="Name"
               name="name"

@@ -28,35 +28,35 @@ const Skills = () => {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill percent={85} icon={<FaReact color={"#61DBFB"} size={96} />} />
+        <Skill percent={85} icon={<FaReact color={"#61DBFB"} size={80} />} />
         <Skill
           percent={75}
           icon={<IoLogoFirebase color={"#F5820D"} size={96} />}
         />
-        <Skill percent={95} icon={<SiTypescript color="#007acc" size={96} />} />
+        <Skill percent={95} icon={<SiTypescript color="#007acc" size={80} />} />
         <Skill
           percent={100}
-          icon={<SiJavascript color="#F0DB4F" size={96} />}
+          icon={<SiJavascript color="#F0DB4F" size={80} />}
         />
         <Skill
           directionLeft={true}
           percent={95}
-          icon={<SiNextdotjs color="white" size={96} />}
+          icon={<SiNextdotjs color="white" size={80} />}
         />
         <Skill
           directionLeft={true}
           percent={100}
-          icon={<AiFillHtml5 color="#f06529 " size={96} />}
+          icon={<AiFillHtml5 color="#f06529 " size={80} />}
         />
         <Skill
           directionLeft={true}
           percent={100}
-          icon={<DiCss3 color="#2965f1" size={96} />}
+          icon={<DiCss3 color="#2965f1" size={80} />}
         />
         <Skill
           directionLeft={true}
           percent={100}
-          icon={<SiTailwindcss color="#01B7D6" size={96} />}
+          icon={<SiTailwindcss color="#01B7D6" size={80} />}
         />
       </div>
     </motion.div>
@@ -75,22 +75,22 @@ const Skill = ({ icon, directionLeft, percent }: SkillProps) => {
   return (
     <motion.div
       initial={{
-        x: directionLeft ? 200 : -200,
+        y: directionLeft ? 50 : -50,
         opacity: 0,
       }}
       transition={{
         duration: 1,
       }}
       whileInView={{
-        x: 0,
+        y: 0,
         opacity: 1,
       }}
       className="group relative flex cursor-pointer"
     >
-      <span className=" w-24 h-24 object-cover filter group-hover:grayscale transition duration-300 ease-in-out">
+      <span className="w-20 h-20 object-cover filter group-hover:grayscale transition duration-300 ease-in-out">
         {icon}
       </span>
-      <div className="absolute opacity-0 group-hover:opacity-60 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 z-0">
+      <div className="absolute opacity-0 group-hover:opacity-60 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 z-0">
         <div className="flex items-center justify-center h-full">
           <p className="text-3xl font-bold text-black opacity-100">
             {percent}%
