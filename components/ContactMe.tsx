@@ -26,18 +26,18 @@ const ContactMe = (props: Props) => {
         </h4>
 
         <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
+          {/* <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+1 (234) 567-8901</p>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-2xl">ethan@ethanburkett.net</p>
           </div>
-          <div className="flex items-center space-x-5 justify-center">
+          {/* <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">123 Developer Lane</p>
-          </div>
+            <p className="text-2xl">123 Not My Address</p>
+          </div> */}
         </div>
 
         <form
