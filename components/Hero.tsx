@@ -1,8 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter, Typewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import beard from "../public/beardedman.png";
-import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
@@ -20,7 +18,7 @@ const Hero = (props: Props) => {
       <BackgroundCircles />
       <img
         src={
-          "https://cdn.discordapp.com/attachments/1018712906122137600/1026965791578525706/logo.jpg"
+          "https://www.creativefabrica.com/wp-content/uploads/2019/02/Monogram-EB-Logo-by-Greenlines-Studios.jpg"
         }
         className="relative rounded-full mx-auto object-cover w-32 h-32"
       />

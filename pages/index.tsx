@@ -9,7 +9,7 @@ import WorkExperience from "../components/WorkExperience";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 text-white h-screen snap-y snap-mandator overflow-scroll overflow-x-hidden z-0">
+    <div className="bg-[rgb(36,36,36)] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 text-white h-screen snap-y snap-always overflow-scroll overflow-x-hidden z-0">
       <Head>
         <title>Ethan Burkett</title>
       </Head>

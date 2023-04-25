@@ -15,8 +15,7 @@ const About = (props: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex relative flex-col text-center scroll-smooth md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
-    >
+      className="h-screen flex relative flex-col text-center scroll-smooth md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl hidden md:inline-flex">
         About
       </h3>
@@ -35,7 +34,7 @@ const About = (props: Props) => {
           duration: 1.2,
         }}
         className="-mb-20 hidden md:inline-flex md:mb-0 flex-shring-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
-        src="https://cdn.discordapp.com/attachments/1018712906122137600/1026965791578525706/logo.jpg"
+        src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Monogram-EB-Logo-by-Greenlines-Studios.jpg"
       />
 
       <div className="space-y-10 px-0 md:px-10">
