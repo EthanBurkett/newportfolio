@@ -1,6 +1,8 @@
 import { ScriptProps } from "next/script";
 import React from "react";
 import { motion } from "framer-motion";
+import { twMerge } from "tw-merge";
+import clsx from "clsx";
 
 type Props = {
   icon: string;
@@ -10,11 +12,12 @@ type Props = {
   startedWork: string;
   endedWork: string;
   summaryPoints: string[];
+  href?: string;
 };
 
 const ExperienceCard = (props: Props & ScriptProps) => {
   return (
-    <article className="bg-[#292929] p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center opacity-100 md:hover:opacity-100 md:opacity-40 transition-opacity cursor-pointer duration-200">
+    <article className="bg-[#292929] p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center opacity-100 md:hover:opacity-100 md:opacity-40 transition-opacity duration-200">
       <motion.img
         initial={{
           y: -100,
@@ -36,11 +39,27 @@ const ExperienceCard = (props: Props & ScriptProps) => {
       />
 
       <div className="md:px-10 scale-75 md:scale-100">
-        <h4 className="text-3xl md:text-4xl font-light">{props.title}</h4>
+        <a
+          href={props.href}
+          target="_blank"
+          rel="noreferrer"
+          className={twMerge(
+            clsx(
+              `text-3xl md:text-4xl font-light transition-all w-auto`,
+              props.href && "underline hover:text-white/80 cursor-pointer"
+            )
+          )}
+        >
+          {props.title}
+        </a>
         <p className="font-bold text-2xl mt-1">{props.subtitle}</p>
         <div className="flex space-x-2 my-2">
           {props.techStacks.map((techStack) => (
-            <span key={techStack.key} className="w-10 h-10 rounded-full">
+            <span
+              title={techStack.key as string}
+              key={techStack.key}
+              className="w-10 h-10 rounded-full"
+            >
               {techStack}
             </span>
           ))}
