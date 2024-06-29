@@ -10,7 +10,7 @@ const ContactMe = (props: Props) => {
     const email = e.target[1].value;
     const subject = e.target[2].value;
     const message = e.target[3].value;
-    window.location.href = `mailto:ethan@ethanburkett.net?subject=${subject}&body=Hi, my name is ${name} (${email}). ${message}`;
+    window.location.href = `mailto:ethan.burkett@outlook.com?subject=${subject}&body=Hi, my name is ${name} (${email}). ${message}`;
   };
 
   return (
@@ -34,7 +34,7 @@ const ContactMe = (props: Props) => {
           </div> */}
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">ethan@ethanburkett.net</p>
+            <p className="text-2xl">ethan.burkett@outlook.com</p>
           </div>
           {/* <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
